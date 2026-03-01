@@ -1,0 +1,316 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background: #000;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Header */
+.sticky-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.95);
+    backdrop-filter: blur(10px);
+    z-index: 1000;
+    border-bottom: 1px solid #333;
+}
+
+.nav-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 70px;
+}
+
+.logo h2 {
+    color: #00D4FF;
+    font-weight: 700;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #00D4FF;
+}
+
+/* Buttons */
+.cta-button-small, .cta-button-main, .plan-button {
+    background: linear-gradient(135deg, #00D4FF, #0099CC);
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 8px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.cta-button-main {
+    padding: 18px 36px;
+    font-size: 18px;
+    border-radius: 12px;
+}
+
+.plan-button.primary {
+    background: linear-gradient(135deg, #FF6B35, #FF8E53);
+}
+
+.cta-button-small:hover, .cta-button-main:hover, .plan-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 25px rgba(0, 212, 255, 0.4);
+}
+
+/* Hero */
+.hero {
+    background: linear-gradient(135deg, #000 0%, #1a1a2e 100%);
+    color: white;
+    padding: 120px 0 80px;
+    text-align: center;
+}
+
+.hero-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.hero h1 {
+    font-size: 3.5rem;
+    font-weight: 700;
+    margin-bottom: 24px;
+    line-height: 1.2;
+}
+
+.highlight {
+    background: linear-gradient(135deg, #00D4FF, #FF6B35);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.hero-subtitle {
+    font-size: 1.4rem;
+    margin-bottom: 60px;
+    color: #ccc;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.value-props {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 40px;
+    margin-bottom: 60px;
+}
+
+.value-prop {
+    background: rgba(255, 255, 255, 0.05);
+    padding: 30px;
+    border-radius: 16px;
+    border: 1px solid rgba(0, 212, 255, 0.3);
+}
+
+.value-prop .icon {
+    font-size: 2.5rem;
+    margin-bottom: 16px;
+}
+
+.value-prop h3 {
+    font-size: 1.4rem;
+    margin-bottom: 12px;
+    color: #00D4FF;
+}
+
+.social-proof {
+    margin-top: 20px;
+    color: #999;
+    font-size: 0.9rem;
+}
+
+/* Pricing */
+.pricing {
+    background: #f8f9fa;
+    padding: 100px 0;
+}
+
+.pricing h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 60px;
+    color: #333;
+}
+
+.pricing-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 30px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.pricing-card {
+    background: white;
+    padding: 40px 30px;
+    border-radius: 16px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    position: relative;
+    border: 2px solid transparent;
+    transition: all 0.3s;
+}
+
+.pricing-card.popular {
+    border-color: #FF6B35;
+    transform: scale(1.05);
+}
+
+.popular-badge {
+    position: absolute;
+    top: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #FF6B35;
+    color: white;
+    padding: 8px 20px;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    font-weight: 600;
+}
+
+.pricing-card h3 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.price {
+    font-size: 3rem;
+    font-weight: 700;
+    color: #00D4FF;
+    margin-bottom: 10px;
+}
+
+.price span {
+    font-size: 1.2rem;
+    color: #666;
+    font-weight: 400;
+}
+
+.plan-desc {
+    color: #666;
+    margin-bottom: 30px;
+    font-style: italic;
+}
+
+.features {
+    list-style: none;
+    margin-bottom: 30px;
+}
+
+.features li {
+    padding: 8px 0;
+    color: #555;
+}
+
+.plan-button {
+    width: 100%;
+    padding: 16px;
+    font-size: 1.1rem;
+}
+
+/* FAQ */
+.faq {
+    background: #f8f9fa;
+    padding: 100px 0;
+}
+
+.faq h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 60px;
+    color: #333;
+}
+
+.faq-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 30px;
+}
+
+.faq-item {
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.faq-item h3 {
+    color: #333;
+    margin-bottom: 15px;
+    font-size: 1.2rem;
+}
+
+/* Final CTA */
+.final-cta {
+    background: linear-gradient(135deg, #00D4FF, #0099CC);
+    color: white;
+    padding: 80px 0;
+    text-align: center;
+}
+
+.final-cta h2 {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+}
+
+.final-cta a {
+    color: white;
+    text-decoration: underline;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+    
+    .hero-subtitle {
+        font-size: 1.2rem;
+    }
+    
+    .pricing-card.popular {
+        transform: none;
+    }
+    
+    .nav-links {
+        display: none;
+    }
+}
